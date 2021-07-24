@@ -5,6 +5,8 @@ CMakeLists.txt为 mac下的文件, CMakeLists.txt.bak为适用于树莓派的工
 
 ## 使用说明
 
+需要变更git文件夹名字为 CXXDEMO
+
 ```bash
 
 mv CMakeLists.txt.bak CMakeLists.txt
