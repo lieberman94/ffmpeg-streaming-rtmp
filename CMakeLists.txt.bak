@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 3.16)
+project(CXXDEMO)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_FLAGS "-D__STDC_CONSTANT_MACROS")
+
+
+add_executable(CXXDEMO main.cpp)
+
+target_include_directories(CXXDEMO PRIVATE /usr/lib/arm-linux-gnueabihf )
+target_link_libraries(CXXDEMO PRIVATE /usr/lib/arm-linux-gnueabihf/libavformat.so
+/usr/lib/arm-linux-gnueabihf/libavcodec.so
+/usr/lib/arm-linux-gnueabihf/libavutil.so )
